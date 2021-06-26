@@ -1,0 +1,73 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+
+}
+
+body {
+    /* background-color: rgb(131,58,180);
+    background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%); */
+background-image: url("bluegr.jpg");
+background-repeat: no-repeat;
+background-size: cover;
+}
+
+.container {
+    /* border: 1px solid black; */
+width: 100%;
+height: 100vh;
+display: flex;
+justify-content: space-around;
+align-items: center;
+}
+
+
+@keyframes design {
+    from {
+        background-color:  rgb(34,193,195);
+        background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
+    }
+        to {
+        background-color: rgb(253,187,45);
+        background: linear-gradient(0deg, rgba(253,187,45,1) 0%, rgba(34,193,195,1) 100%);  
+}
+}
+
+.beatbox {
+
+    width: 70vh;
+    height: 70vh;
+    background-color: rgb(14, 12, 12);
+    border-radius: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: space-evenly;
+}
+
+.box {
+    width:15%;
+    height: 23%;
+    flex-basis: 24%;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    margin: 0.5rem;
+    cursor: pointer;
+    animation: design 2s ease-in-out -1s infinite  ;
+    
+}
+
+.box .button {
+    width: 100%;
+    height: 100%;
+    border-radius: 50px;
+    border: 1px solid rgb(16, 187, 178);
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    transition: all 0.2s;
+}
